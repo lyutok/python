@@ -1,0 +1,121 @@
+#gradient {
+	background: linear-gradient(-90deg, #B9DBE6, #5F818A, #82A6CB, #79A8A9);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.album-bg {
+	position: relative;
+	height: auto;
+  }
+
+.album-bg::before {
+	content: "";
+	background: url('images/bg.jpg') rgba(255, 255, 255, 0.3); /* Adjust the opacity here */
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0.5; /* Adjust the opacity here */
+	z-index: -1;
+}
+
+/* Style the thibnails content over the background */
+.content {
+    padding: 20px;
+	color: white;   /* Ensure text is readable */
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  }
+
+/* Style the txt content over the background */
+.content-txt {
+    padding: 10px;
+	color: white;   /* Ensure text is readable */
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+
+.circle-image {
+    width: 100px;    /* Set a fixed width */
+    height: 100px;   /* Set the same fixed height to ensure it's a square */
+    object-fit: cover; /* Ensures the image is scaled proportionally within the circle */
+    border-radius: 50%; /* Makes the image a circle */
+}
+
+.thubnail-bttn {
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+.background-div {
+    background-image: url('images/bg.jpg');
+    background-size: cover; /* Ensures the image covers the div */
+    background-position: center; /* Centers the image */
+    height: 200px; /* Set the height of the div */
+    display: flex; /* Enables flexbox for centering content */
+    justify-content: center; /* Horizontally centers content */
+    align-items: center; /* Vertically centers content */
+}
+
+.not-black {
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+	color: #373A40;
+}
+
+
+/* Make the previous button black */
+.carousel-control-prev-icon {
+    border: solid black;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  /* Make the next button black */
+  .carousel-control-next-icon {
+    border: solid black;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  /* Change the default white indicators (dots/lines) to black */
+  .carousel-indicators [data-bs-target] {
+    background-color: black;
+  }
+
+  /* Optional: Add hover effect to change indicator color */
+  .carousel-indicators [data-bs-target]:hover {
+    background-color: darkgray;
+  }
+
+  /* Optional: Style for the active indicator */
+  .carousel-indicators .active {
+    background-color: black;
+  }
+
+
+  a {
+    text-decoration: none; /* Removes any underline */
+  }
