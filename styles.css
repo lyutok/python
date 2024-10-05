@@ -41,17 +41,16 @@
 /* Style the thibnails content over the background */
 .content {
     padding: 20px;
-	color: white;   /* Ensure text is readable */
-	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+	  color: white;   /* Ensure text is readable */
+	  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
   }
 
 /* Style the txt content over the background */
 .content-txt {
     padding: 10px;
-	color: white;   /* Ensure text is readable */
-	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+	  color: white;   /* Ensure text is readable */
+	  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 }
-
 
 .circle-image {
     width: 100px;    /* Set a fixed width */
