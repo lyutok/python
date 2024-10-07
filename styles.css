@@ -19,8 +19,7 @@
 
 .album-bg {
 	position: relative;
-	height: auto;
-  }
+}
 
 .album-bg::before {
 	content: "";
@@ -37,6 +36,7 @@
 	opacity: 0.5; /* Adjust the opacity here */
 	z-index: -1;
 }
+
 
 /* Style the thibnails content over the background */
 .content {
@@ -64,22 +64,10 @@
 	margin: 0 auto;
 }
 
-
-.background-div {
-    background-image: url('images/bg.jpg');
-    background-size: cover; /* Ensures the image covers the div */
-    background-position: center; /* Centers the image */
-    height: 200px; /* Set the height of the div */
-    display: flex; /* Enables flexbox for centering content */
-    justify-content: center; /* Horizontally centers content */
-    align-items: center; /* Vertically centers content */
-}
-
 .not-black {
 	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 	color: #373A40;
 }
-
 
 /* Make the previous button black */
 .carousel-control-prev-icon {
@@ -91,7 +79,7 @@
   }
 
   /* Make the next button black */
-  .carousel-control-next-icon {
+.carousel-control-next-icon {
     border: solid black;
     background-color: black;
     width: 30px;
@@ -100,21 +88,20 @@
   }
 
   /* Change the default white indicators (dots/lines) to black */
-  .carousel-indicators [data-bs-target] {
+.carousel-indicators [data-bs-target] {
     background-color: black;
   }
 
   /* Optional: Add hover effect to change indicator color */
-  .carousel-indicators [data-bs-target]:hover {
+.carousel-indicators [data-bs-target]:hover {
     background-color: darkgray;
   }
 
   /* Optional: Style for the active indicator */
-  .carousel-indicators .active {
+.carousel-indicators .active {
     background-color: black;
   }
 
-
-  a {
-    text-decoration: none; /* Removes any underline */
-  }
+a {
+  text-decoration: none; /* Removes any underline */
+}
